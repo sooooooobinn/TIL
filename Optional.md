@@ -7,8 +7,26 @@ Optional이란 null일 수도 있는 객체의 값을 감싸는 Wrapper 역할�
 
 Optional 변수 내부에서는 null이 아닌 객체가 있을 수도 있고 null이 있을 수도 있다.
 
+## Optional 함수
+
+### Optional.empty()
+값이 null인 경우를 뜻한다.
+Optional은 Wrapper 클래스이기 때문에 값이 없을 수도 있는데, 이때는 Optional.empty()로 생성할 수 있다.
+
+### Optional.of()
+값이 null이 아닌 경우를 뜻한다.
+생성하려는 데이터가 무조건 null이 아닌 경우 이 함수를 이용해서 생성할 수 있다. 만약 Optional.of로 null 데이터를 생성하려고 한다면 NullPointerException이 발생한다.
+
+### Optional.OfNullbale()
+값이 null이거나 아니거나를 뜻한다.
+값이 null이 오거나 null이 아닌 경우에 이 함수를 이용하여 값을 생성할 수 있다.
+
+
 ### orElseThrow()
 orElseThrow() 메서드는 Optional 객체에서 값을 꺼내오는 메서도로, 값이 존재하는 경우에는 해당 값을 반환하고, 값이 없는 경우에는 지정된 예외를 발생한다. 
+
+### orElse()
+Optinal 값이 null로 올 경우 이 안에 있는 코드들을 실행시킨다.
 
 ### orElseGet()
 Optional 클래스의 메서드 중 하나로, orElseThow()와 값이 유사하게 존재하지 않는 경우의 처리를 지원한다.
@@ -18,4 +36,3 @@ orElseGet() 메서드는 값이 존재하지 않는 경우, 기본적으로 제�
 > **Supplier 함수란?**
 >
 > 어떠한 입력도 받지 않고 결과를 반환하는 연산을 수행한다. 이 인터페이스는 주로 요청 시 새로운 객체를 생성하거나, 복잡한 계산이나 조건에 따른 결과를 제공할 때 사용된다.
-
