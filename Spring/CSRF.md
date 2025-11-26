@@ -17,3 +17,14 @@ CSRF Protection은 Spring Security에서 default로 설정되어 있다.
 >GET 요청을 제외한 상태를 변화시킬 수 있는 요청(POST, PUT,DELETE)들로부터 보호한다.
 
 그렇다면 이 CSRF를 왜 disable 하였을까?
+
+>disable이란?
+>
+>비활성화, 사용하지 못하게 하는 의미이다.
+>
+>``http.csrf().disable()`` : CSRF 기능을 끈다.  
+
+rest api를 이용한 서버라면, session 기반 인증과는 다르게 stateless하기 때문에 서버에 인증정보를 포함하지 않는다. rest api에서 client는 권한이 필요한 요청을 하기 위해서는 요청에 필요한 인증 정보를 포함시켜야한다.
+
+
+따라서 서버에 인증정보를 저장하지 않기 때문에 굳이 불필요한 csrf 코드들을 작성할 필요가 없다.
