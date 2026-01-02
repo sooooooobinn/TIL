@@ -13,3 +13,4 @@
 - ``git feath origin/master`` : 최신 데이터 불러오기
 - ``git push -u origin`` : 원격 저장소에 push
 - ``git push`` : commit된 내용 push
+- ``git pull origin/mian`` : git pull 받기
