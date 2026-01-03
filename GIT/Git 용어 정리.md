@@ -14,3 +14,4 @@
 - ``git push -u origin`` : 원격 저장소에 push
 - ``git push`` : commit된 내용 push
 - ``git pull origin/mian`` : git pull 받기
+- ``git status`` : git 상태 확인
