@@ -15,3 +15,4 @@
 - ``git push`` : commit된 내용 push
 - ``git pull origin/mian`` : git pull 받기
 - ``git status`` : git 상태 확인
+- ``git fetch`` : git repository 원격에 있는 데이터 가져오기
