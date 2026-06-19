@@ -16,7 +16,7 @@ Upstream Repository를 Fork한 원격 개인 저장소
 ## git branch
 git flow 방식에서 사용하는 branch들은 5가지의 종류가 있다.
 
-``master``, ``develop`` : 항상 유지되는 메인 브랜치들
+``master``, ``develop`` : 항상 유지되는 메인 <br>
 ``feature``, ``release``, ``hotfix`` : 일정 기간 동안만 유지되는 보조 브랜치들
 
 - ``master`` : 제품으로 출시될 수 있는 브랜치
